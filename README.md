@@ -9,4 +9,4 @@ Built using the following resources:
 
 [1]:https://necolas.github.io/normalize.css/
 [2]:http://getskeleton.com/
-[3]:http://clrs.css
+[3]:http://clrs.cc
