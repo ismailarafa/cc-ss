@@ -19,26 +19,6 @@
    - SVG Strokes
 */
 
-/* Backgrounds */
-
-$bg-navy: #001f3f;
-$bg-blue: #0074d9;
-$bg-aqua: #7fdbff;
-$bg-teal: #39cccc;
-$bg-olive: #3d9970;
-$bg-green: #2ecc40;
-$bg-lime: #01ff70;
-$bg-yellow: #ffdc00;
-$bg-orange: #ff851b;
-$bg-red: #ff4136;
-$bg-fuchsia: #f012be;
-$bg-purple: #b10dc9;
-$bg-maroon: #85144b;
-$bg-white: #fff;
-$bg-gray: #aaa;
-$bg-silver: #ddd;
-$bg-black: #111;
-
 /* Colors */
 
 $navy: #001f3f;
@@ -59,83 +39,84 @@ $silver: #ddd;
 $gray: #aaa;
 $black: #111;
 
-/* Border colors
-   Use with another border utility that sets border-width and style
-   i.e .border { border-width: 1px); border-style: solid); }
-*/
-
-$border--navy: #001f3f;
-$border--blue: #0074d9;
-$border--aqua: #7fdbff;
-$border--teal: #39cccc;
-$border--olive: #3d9970;
-$border--green: #2ecc40;
-$border--lime: #01ff70;
-$border--yellow: #ffdc00;
-$border--orange: #ff851b;
-$border--red: #ff4136;
-$border--fuchsia: #f012be;
-$border--purple: #b10dc9;
-$border--maroon: #85144b;
-$border--white: #fff;
-$border--gray: #aaa;
-$border--silver: #ddd;
-$border--black: #111;
-
 /* Gradients */
 
-$grad--navy--blue: (#001f3f, #0074d9);
-$grad--blue--aqua: (#0074d9, #7fdbff);
-$grad--aqua--teal: (#7fdbff, #39cccc);
-$grad--teal--olive: (#39cccc, #3d9970);
-$grad--olive--green: (#3d9970, #2ecc40);
-$grad--green--lime: (#2ecc40, #01ff70);
-$grad--lime--yellow: (#01ff70, #ffdc00);
-$grad--yellow--orange: (#ffdc00, #ff851b);
-$grad--orange--red: (#ff851b, #ff4136);
-$grad--red--fuchsia: (#ff4136, #f012be);
-$grad--fuchsia--purple: (#f012be, #b10dc9);
-$grad--purple--maroon: (#b10dc9, #85144b);
-$grad--maroon--white: (#85144b, #fff);
-$grad--white--gray: (#fff, #aaa);
-$grad--gray--black: (#aaa, #111);
+.grad-navy-blue {
+  background: -webkit-linear-gradient(45deg, $navy, $blue);
+  background: linear-gradient(45deg, $navy, $blue);
+}
 
-/* Fills for SVG */
+.grad-blue-aqua {
+  background: -webkit-linear-gradient(45deg, $blue, $aqua);
+  background: linear-gradient(45deg, $blue, $aqua);
+}
 
-$fill-navy: #001f3f;
-$fill-blue: #0074d9;
-$fill-aqua: #7fdbff;
-$fill-teal: #39cccc;
-$fill-olive: #3d9970;
-$fill-green: #2ecc40;
-$fill-lime: #01ff70;
-$fill-yellow: #ffdc00;
-$fill-orange: #ff851b;
-$fill-red: #ff4136;
-$fill-fuchsia: #f012be;
-$fill-purple: #b10dc9;
-$fill-maroon: #85144b;
-$fill-white: #fff;
-$fill-gray: #aaa;
-$fill-silver: #ddd;
-$fill-black: #111;
+.grad-aqua-teal {
+  background: -webkit-linear-gradient(45deg, $aqua, $teal);
+  background: linear-gradient(45deg, $aqua, $teal);
+}
 
-/* Strokes for SVG */
+.grad-teal-olive {
+  background: -webkit-linear-gradient(45deg, $teal, $olive);
+  background: linear-gradient(45deg, $teal, $olive);
+}
 
-$stroke-navy: #001f3f;
-$stroke-blue: #0074d9;
-$stroke-aqua: #7fdbff;
-$stroke-teal: #39cccc;
-$stroke-olive: #3d9970;
-$stroke-green: #2ecc40;
-$stroke-lime: #01ff70;
-$stroke-yellow: #ffdc00;
-$stroke-orange: #ff851b;
-$stroke-red: #ff4136;
-$stroke-fuchsia: #f012be;
-$stroke-purple: #b10dc9;
-$stroke-maroon: #85144b;
-$stroke-white: #fff;
-$stroke-gray: #aaa;
-$stroke-silver: #ddd;
-$stroke-black: #111;
+.grad-olive-green {
+  background: -webkit-linear-gradient(45deg, $olive, $green);
+  background: linear-gradient(45deg, $olive, $green);
+}
+
+.grad-green-lime {
+  background: -webkit-linear-gradient(45deg, $green, $lime);
+  background: linear-gradient(45deg, $green, $lime);
+}
+
+.grad-lime-yellow {
+  background: -webkit-linear-gradient(45deg, $lime, $yellow);
+  background: linear-gradient(45deg, $lime, $yellow);
+}
+
+.grad-yellow-orange {
+  background: -webkit-linear-gradient(45deg, $yellow, $orange);
+  background: linear-gradient(45deg, $yellow, $orange);
+}
+
+.grad-orange-red {
+  background: -webkit-linear-gradient(45deg, $orange, $red);
+  background: linear-gradient(45deg, $orange, $red);
+}
+
+.grad-red-fuchsia {
+  background: -webkit-linear-gradient(45deg, $red, $fuchsia);
+  background: linear-gradient(45deg, $red, $fuchsia);
+}
+
+.grad-fuchsia-purple {
+  background: -webkit-linear-gradient(45deg, $fuchsia, $purple);
+  background: linear-gradient(45deg, $fuchsia, $purple);
+}
+
+.grad-purple-maroon {
+  background: -webkit-linear-gradient(45deg, $purple, $maroon);
+  background: linear-gradient(45deg, $purple, $maroon);
+}
+
+.grad-maroon-white {
+  background: -webkit-linear-gradient(45deg, $maroon, $white);
+  background: linear-gradient(45deg, $maroon, $white);
+}
+
+.grad-white-gray {
+  background: -webkit-linear-gradient(45deg, $white, $gray);
+  background: linear-gradient(45deg, $white, $gray);
+}
+
+.grad-gray-silver {
+  background: -webkit-linear-gradient(45deg, $gray, $silver);
+  background: linear-gradient(45deg, $gray, $silver);
+}
+
+.grad-silver-black {
+  background: -webkit-linear-gradient(45deg, $silver, $black);
+  background: linear-gradient(45deg, $silver, $black);
+}
