@@ -1,4 +1,4 @@
-# cc-ss-framework
+# cc-ss
 
 CSS framework w/ some SASS
 
