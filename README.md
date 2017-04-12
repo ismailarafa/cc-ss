@@ -1,4 +1,5 @@
 # cc-ss-framework
+
 CSS framework w/ some SASS
 
 Built using the following resources:
@@ -7,6 +8,14 @@ Built using the following resources:
 - [Skeleton][2]
 - [clrs][3]
 
-[1]:https://necolas.github.io/normalize.css/
-[2]:http://getskeleton.com/
-[3]:http://clrs.cc
+## Alias demo
+
+![](images/alias.gif)
+
+### Compiler demo
+
+![](images/demo.gif)
+
+[1]: https://necolas.github.io/normalize.css/
+[2]: http://getskeleton.com/
+[3]: http://clrs.cc
