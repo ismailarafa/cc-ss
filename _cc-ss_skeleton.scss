@@ -24,6 +24,15 @@
 - Media Queries
 */
 
+@import 'cc-ss_colors';
+
+$primary-color: $l0rd-green;
+$secondary-color: $maroon;
+$primary-text-color: $black;
+$secondary-text-color: $white;
+$base-font: "Lato", sans-serif;
+$heading-font: "Quicksand", sans-serif;
+
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300,400');
 
 .container {
@@ -205,8 +214,8 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Quicksand" "Lato", sans-serif;
-  color: #222;
+  font-family: $base-font;
+  color: $primary-text-color;
 }
 
 h1,
@@ -218,7 +227,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
-  font-family: "Quicksand", sans-serif;
+  font-family: $heading-font;
 }
 
 h1 {
@@ -285,15 +294,15 @@ h6 {
 
 p {
   margin-top: 0;
-  font-family: "Lato", sans-serif;
+  font-family: $base-font;
 }
 
 a {
-  color: #1eaedb;
+  color: $secondary-color;
 }
 
 a:hover {
-  color: #0fa0ce;
+  color: darken($primary-color, 65%);
 }
 
 .button,
@@ -304,7 +313,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: $primary-color;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -330,7 +339,7 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
+  color: darken($primary-color, 75%);
   border-color: $gray;
   outline: 0;
 }
@@ -381,7 +390,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid $aqua;
+  border: 1px solid $primary-color;
   outline: 0;
 }
 
