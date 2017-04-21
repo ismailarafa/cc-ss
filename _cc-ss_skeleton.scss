@@ -25,6 +25,7 @@
 */
 
 @import 'cc-ss_colors';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300,400');
 
 $primary-color: $l0rd-green;
 $secondary-color: $maroon;
@@ -32,8 +33,6 @@ $primary-text-color: $black;
 $secondary-text-color: $white;
 $base-font: "Lato", sans-serif;
 $heading-font: "Quicksand", sans-serif;
-
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300,400');
 
 .container {
   position: relative;
