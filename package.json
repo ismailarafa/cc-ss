@@ -1,0 +1,32 @@
+{
+  "name": "cc-ss",
+  "version": "1.0.0",
+  "description": "CSS framework w/ some SASS",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo 'hello nice'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l0rdcafe/cc-ss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l0rdcafe/cc-ss/issues"
+  },
+  "homepage": "https://github.com/l0rdcafe/cc-ss#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "postcss-import": "^11.1.0",
+    "postcss-simple-vars": "^4.1.0"
+  }
+}
