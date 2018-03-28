@@ -8,7 +8,7 @@ const rename = require("gulp-rename");
 
 gulp.task("styles", () =>
   gulp
-    .src("cc-ss.css")
+    .src("src/cc-ss.css")
     .pipe(postcss([autoprefixer(), postcssimport(), vars()]))
     .pipe(cssnano())
     .pipe(rename("cc-ss.min.css"))
