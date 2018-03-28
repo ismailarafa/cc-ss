@@ -8,13 +8,17 @@ Built using the following resources:
 - [Skeleton][2]
 - [clrs][3]
 
-## Alias demo
+## Alias Demo
 
 ![](images/alias.gif)
 
-### Compiler demo
+### Compiler Demo
 
 ![](images/demo.gif)
+
+### Webpack Demo
+
+![](images/webpack.gif)
 
 [1]: https://necolas.github.io/normalize.css/
 [2]: http://getskeleton.com/
