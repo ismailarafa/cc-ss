@@ -1,16 +1,18 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
+const path = require("path");
 
 const extractCss = new ExtractTextPlugin({
   filename: "cc-ss.min.css"
 });
 
 module.exports = {
-  context: `${__dirname}/src`,
-  entry: `./index.js`,
-  output: {
-    path: __dirname
+  entry: `./src/js/main.js`,
+  devtool: "source-map",
+  devServer: {
+    open: true
   },
   module: {
     rules: [
@@ -35,5 +37,10 @@ module.exports = {
       }
     ]
   },
-  plugins: [extractCss]
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
+    }),
+    extractCss
+  ]
 };
