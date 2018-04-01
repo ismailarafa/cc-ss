@@ -1,1 +1,1 @@
-import "../css/cc-ss.css";
+import "./truth";

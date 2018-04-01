@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
+const webpack = require("webpack");
 const path = require("path");
 
 const extractCss = new ExtractTextPlugin({
@@ -9,10 +10,14 @@ const extractCss = new ExtractTextPlugin({
 });
 
 module.exports = {
-  entry: `./src/js/main.js`,
+  entry: ["./src/js/main.js", "./src/css/cc-ss.css"],
   devtool: "source-map",
   devServer: {
-    open: true
+    open: true,
+    hot: true,
+    contentBase: "./src",
+    watchContentBase: true,
+    stats: "errors-only"
   },
   module: {
     rules: [
@@ -33,7 +38,8 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        use: "babel-loader"
       }
     ]
   },
@@ -41,6 +47,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html"
     }),
-    extractCss
+    extractCss,
+    new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
