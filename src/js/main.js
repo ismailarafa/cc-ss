@@ -1,1 +1,1 @@
-import "./truth";
+import "./log";

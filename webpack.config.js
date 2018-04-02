@@ -3,8 +3,8 @@ const ExtractTextPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 const webpack = require("webpack");
-const path = require("path");
 
+const env = process.env.NODE_ENV;
 const extractCss = new ExtractTextPlugin({
   filename: "cc-ss.min.css"
 });
@@ -24,8 +24,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          "style-loader",
-          ExtractTextPlugin.loader,
+          env === "production" ? ExtractTextPlugin.loader : "style-loader",
           { loader: "css-loader", options: { importLoaders: 1 } },
           {
             loader: "postcss-loader",

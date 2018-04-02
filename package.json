@@ -8,8 +8,8 @@
   },
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --progress --colors",
+    "build": "NODE_ENV=production webpack --mode production",
+    "start": "webpack-dev-server --progress --colors --mode development",
     "deploy": "gh-pages -d build"
   },
   "repository": {

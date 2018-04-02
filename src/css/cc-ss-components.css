@@ -40,7 +40,6 @@ $breakpoint-m: 767px;
 
 body {
   margin: 0;
-  background-color: $yellow;
 }
 
 * {
