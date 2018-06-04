@@ -121,7 +121,7 @@ footer {
 
   h4 {
     color: $secondary-text-color;
-    margin-top: 15%;
+    margin-top: 2%;
   }
 }
 
@@ -647,47 +647,47 @@ select {
   box-sizing: border-box;
 }
 
-.input--secondary,
-input[type="email"].input--secondary,
-input[type="number"].input--secondary,
-input[type="search"].input--secondary,
-input[type="text"].input--secondary,
-input[type="tel"].input--secondary,
+.input--secondary:focus,
+input[type="email"].input--secondary:focus,
+input[type="number"].input--secondary:focus,
+input[type="search"].input--secondary:focus,
+input[type="text"].input--secondary:focus,
+input[type="tel"].input--secondary:focus,
 input[type="url"].input--secondary,
-input[type="password"].input--secondary {
+input[type="password"].input--secondary:focus {
   border: 1px solid $secondary-color;
 }
 
-.input--info,
-input[type="email"].input--info,
-input[type="number"].input--info,
-input[type="search"].input--info,
-input[type="text"].input--info,
-input[type="tel"].input--info,
-input[type="url"].input--info,
-input[type="password"].input--info {
+.input--info:focus,
+input[type="email"].input--info:focus,
+input[type="number"].input--info:focus,
+input[type="search"].input--info:focus,
+input[type="text"].input--info:focus,
+input[type="tel"].input--info:focus,
+input[type="url"].input--info:focus,
+input[type="password"].input--info:focus {
   border: 1px solid $blue;
 }
 
-.input--warning,
-input[type="email"].input--warning,
-input[type="number"].input--warning,
-input[type="search"].input--warning,
-input[type="text"].input--warning,
-input[type="tel"].input--warning,
-input[type="url"].input--warning,
-input[type="password"].input--warning {
+.input--warning:focus,
+input[type="email"].input--warning:focus,
+input[type="number"].input--warning:focus,
+input[type="search"].input--warning:focus,
+input[type="text"].input--warning:focus,
+input[type="tel"].input--warning:focus,
+input[type="url"].input--warning:focus,
+input[type="password"].input--warning:focus {
   border: 1px solid $yellow;
 }
 
-.input--error,
-input[type="email"].input--error,
-input[type="number"].input--error,
-input[type="search"].input--error,
-input[type="text"].input--error,
-input[type="tel"].input--error,
-input[type="url"].input--error,
-input[type="password"].input--error {
+.input--error:focus,
+input[type="email"].input--error:focus,
+input[type="number"].input--error:focus,
+input[type="search"].input--error:focus,
+input[type="text"].input--error:focus,
+input[type="tel"].input--error:focus,
+input[type="url"].input--error:focus,
+input[type="password"].input--error:focus {
   border: 1px solid $red;
 }
 
